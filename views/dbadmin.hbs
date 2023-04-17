@@ -1,0 +1,30 @@
+{{> header }}
+<body>
+{{> navigation }}
+<div class="container border">
+    <form id="quadform" method="post" action="process">
+      <div class="row mb-1 mt-1">
+        <div class="col-3"></div>  
+        <div class="col-6 text-center text-primary text-nowrap">ECS Testing Choices</div>
+        <div class="col-3"></div>  
+      </div>
+      <div class="row mt-2 mb-2">
+        <div class="col-12 text-nowrap">
+            <input type="text" class="form-control" id="content" name="content" placeholder="Query in DB" value="{{inputs.content}}">
+        </div>
+      </div>        
+
+      <div class="row mb-1">
+          <div id="actions" name="actions" class="col-12 text-center text-warning">
+              <a class="btn btn-outline-info" href="#" onclick="(this).closest('form').submit();"> Process </a>
+          </div>
+      </div>
+    </form>
+
+    {{#if result}}
+      <div class= "row mt-2 ">
+        <div class= "col-12 h2 text-center">{{result}}</div>
+      </div>
+    {{/if}} 
+</div>
+{{> footer }}

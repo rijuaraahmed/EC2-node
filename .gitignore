@@ -1,0 +1,18 @@
+#####################################################################
+## Ignore workspace configurations.
+#####################################################################
+# MacBook OS
+.DS_Store
+.idea/
+.vscode/
+#####################################################################
+## Ignore directories created by npm install.
+#####################################################################
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# misc
+.Bak
+.bak
+debug.log
