@@ -28,7 +28,7 @@ jobs:
    #     cache: 'npm'
    # - run: npm ci
     - run: cd /home/ubuntu/node-runner/_work/EC2-node/EC2-node
-    - run: nvm use v16.17.1
+    - run: /home/ubuntu/.nvm/nvm.sh use v16.17.1
     - run: npm install
     - run: npm run build --if-present
     - run: pm2 restart /home/ubuntu/node-runner/_work/EC2-node/EC2-node/index.js
