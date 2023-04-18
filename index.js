@@ -84,7 +84,7 @@ function readData() {
 }
 
 app.get('/health-check', function(req, res) {
-    return res.status(200).send('<h2>Successfully used CI/CD to update the application!!</h2>'); 
+    return res.status(200).send('<h2>Successfully used CI/CD to update the application for a second time!!</h2>'); 
 });
 
 app.listen(port, function() {
